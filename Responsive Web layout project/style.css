@@ -43,7 +43,7 @@
     padding: 0px;
     grid-template-columns: 1 / 2;
 }
-.box2 >p
+.box2 >p :hover
 {
     font-size: large;
     padding: 5px;
