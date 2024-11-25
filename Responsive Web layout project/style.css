@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+.container_1 {
+    display: grid;
+    grid-template-areas:
+        "box1 box1"
+        "box2 box3"
+        "box4 box4";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 0;
+}
+
+
+.box1 {
+    grid-area: box1;
+    text-align: center;
+    color: #ffffff;
+    background-color: #151514;
+    padding: 20px;
+    
+}
+
+
+.box2 {
+    grid-area: box2;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    background-color: #34522f;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.box2 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.box2 td {
+    padding: 15px;
+    text-align: center;
+}
+
+.box2 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.box2 a:hover {
+    color: #949ea9;
+    text-decoration: underline;
+}
+
+
+.box3 {
+    grid-area: box3;
+    background-color: #ffffff;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.box3 h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #151514;
+}
+
+.box3 p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.9;
+    color: #333333;
+}
+
+
+.box4 {
+    grid-area: box4;
+    text-align: center;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    padding: 10px;
+    
+}
+
